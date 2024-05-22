@@ -61,7 +61,6 @@ section {
 .gallery-image {
   width: 360px;
   height: 200px;
-
 }
 
 .spinner {
@@ -125,12 +124,42 @@ section {
     clip-path: polygon(50% 50%, 0 0, 100% 0, 100% 100%, 0 100%, 0 0)
   }
 }
-.load-button{
-    padding: 8px 16px;
-      font-size: 16px;
-      border: none;
-      border-radius: 4px;
-      background-color: #007bff;
-      color: white;
-      cursor: pointer;
+
+.full-image {
+  border: 1px solid #808080;
 }
+
+.is-hidden {
+  opacity: 0;
+  visibility: hidden;
+}
+.load-button {
+  padding: 8px 16px;
+  font-size: 16px;
+  border: none;
+  border-radius: 4px;
+  background-color: #007bff;
+  color: white;
+  cursor: pointer;
+  margin-top: 20px;
+}
+.load-button:hover {
+  background-color: #0056b3;
+}
+
+.load-button.is-hidden {
+  display: none;
+}
+.iziToast {
+  font-family: Arial, sans-serif;
+}
+
+.iziToast-message {
+  font-size: 14px;
+}
+@keyframes spinner-zp9dbg {
+  to {
+    transform: rotate(1turn);
+  }
+}
+

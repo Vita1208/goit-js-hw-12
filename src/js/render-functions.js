@@ -33,7 +33,6 @@ export function displayToast(message, type) {
     message,
     messageColor: 'white',
     position: 'topRight',
-    backgroundColor: 'red'
+    backgroundColor: type === 'error' ? 'red' : 'green',
   });
 }
-

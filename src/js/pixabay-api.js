@@ -1,4 +1,5 @@
 import axios from 'axios';
+import iziToast from 'izitoast';
 
 const API_KEY = '43838744-76530a55bebff011fa4d493be'; 
 const BASE_URL = 'https://pixabay.com/api/';
@@ -16,7 +17,12 @@ export const fetchImages = async (query, page = 1, perPage = 15) => {
     });
     return response.data;
   } catch (error) {
-    console.error('Error fetching images:', error);
+    iziToast.error({
+      title: 'Error',
+      message: 'Failed to fetch images. Please try again later.',
+    });
     throw error;
   }
 };
+
+
